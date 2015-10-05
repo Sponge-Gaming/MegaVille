@@ -1,0 +1,796 @@
+var carrotl = function(x, y, s, r) {
+			pushMatrix();
+			translate(-10, -59);
+			translate(x, y);
+			rotate(r);
+			scale(s / 10);
+			scale(0.2);
+			scale(1);
+			pushMatrix(); //leaves of carrot
+			stroke(70, 161, 0);
+			fill(82, 209, 50);
+			translate(54, -78);
+			
+			beginShape();
+			vertex(110, 106);
+			bezierVertex(134, 111, 151, 114, 155, 196);
+			bezierVertex(100, 194, 112, 127, 110, 106);
+			endShape();
+			popMatrix();
+			pushMatrix(); //leaves of carrot
+			translate(-20, 180);
+			rotate(-20);
+			
+			beginShape();
+			vertex(153, 170);
+			bezierVertex(188, 157, 200, 164, 238, 202);
+			bezierVertex(178, 188, 182, 208, 160, 216);
+			endShape();
+			popMatrix();
+			pushMatrix(); // leaves of carrot
+			translate(80, -29);
+			rotate(-19);
+											beginShape();
+			vertex(110, 182);
+			bezierVertex(120, 160, 124, 134, 198, 146);
+			bezierVertex(150, 176, 173, 183, 135, 200);
+			endShape();
+			popMatrix();
+
+			fill(255, 185, 79); //orange part of carrot
+			strokeWeight(6);
+			stroke(255, 136, 0);
+			beginShape();
+			vertex(237, 116);
+			bezierVertex(142, 73, 126, 137, 94, 286);
+			bezierVertex(80, 448, 123, 375, 175, 325);
+			bezierVertex(258, 220, 333, 157, 237, 116);
+			endShape();
+			pushMatrix();
+			popMatrix();
+			rotate(0.35);
+			noFill();
+			arc(243, 105, 94, -5, 203, 341);
+			arc(239, 160, 84, -5, 217, 336);
+			arc(236, 215, 66, -5, 203, 341);
+			arc(236, 260, 47, -5, 203, 341);
+			popMatrix();
+		};
+		var blueberryl = function(x, y, s, r) {
+			pushMatrix();
+			
+			translate(-131, -167);
+			translate(x, y);
+			scale(s / 10);
+			rotate(r);
+			
+			fill(0, 119, 255);
+			stroke(0, 119, 255, 150);
+			pushMatrix();
+			
+			beginShape();
+			vertex(142, 135);
+			bezierVertex(74, 129, 104, 200, 144, 182);
+			bezierVertex(167, 176, 162, 141, 142, 135);
+			endShape();
+			popMatrix();
+
+			pushMatrix();
+			translate(88, 110);
+			
+			scale(0.25);
+			fill(0, 26, 255);
+			stroke(196, 203, 255, 150);
+																						beginShape();
+			vertex(145, 195);
+			bezierVertex(147, 176, 146, 195, 148, 175);
+			bezierVertex(164, 197, 150, 176, 164, 196);
+			bezierVertex(187, 184, 163, 196, 186, 185);
+			bezierVertex(177, 213, 186, 184, 177, 213);
+			bezierVertex(188, 233, 177, 213, 188, 234);
+			bezierVertex(166, 230, 188, 234, 165, 228);
+			bezierVertex(153, 258, 165, 227, 153, 256);
+			bezierVertex(142, 220, 153, 253, 143, 218);
+			bezierVertex(113, 205, 142, 220, 114, 204);
+			bezierVertex(146, 195, 113, 205, 146, 196);
+			endShape();
+			popMatrix();
+			popMatrix();
+		};
+		var tomatol = function(x, y, s, r) {
+			pushMatrix();
+			
+			translate(-51, -58);
+			translate(x, y);
+			scale(s / 10);
+			rotate(r);
+			
+			pushMatrix();
+			scale(0.35);
+			stroke(173, 0, 0);
+			strokeWeight(6);
+			fill(255, 0, 0);
+			beginShape();
+			vertex(181, 145);
+			bezierVertex(75, 98, 54, 267, 192, 266);
+			bezierVertex(325, 271, 295, 96, 182, 145);
+			endShape();
+			popMatrix();
+			
+			for (var i = 32; i > 0; i--) {
+				noStroke();
+				fill(255, 196, 196, 10);
+				ellipse(71, 62, i, i);														}
+			pushMatrix();
+			
+			translate(9, -52);
+			scale(0.3);
+																						fill(10, 156, 0);
+			stroke(0, 84, 13);
+																						beginShape();
+			vertex(98, 285);
+			bezierVertex(118, 264, 164, 278, 186, 317);
+			bezierVertex(231, 273, 254, 281, 276, 304);
+			bezierVertex(238, 304, 227, 307, 200, 330);
+			bezierVertex(261, 336, 268, 341, 273, 368);
+			bezierVertex(245, 343, 227, 354, 198, 347);
+			bezierVertex(197, 358, 201, 380, 185, 396);
+			bezierVertex(175, 377, 186, 352, 168, 348);
+			bezierVertex(136, 335, 120, 345, 90, 355);
+			bezierVertex(102, 318, 115, 312, 164, 323);
+			bezierVertex(151, 306, 136, 293, 97, 285);
+			endShape();
+			popMatrix();
+			popMatrix();
+		};
+		var tittle = function(x, y, s, r) {
+		    pushMatrix();
+		    translate(x, y);
+		    translate(s*2, s*4);
+		    scale(s/10);
+		    rotate(r);
+
+		    noStroke();
+		    fill(179, 145, 86);
+		    rect(-169, -93, 300, 100, 20);
+
+		    pushMatrix();
+		    stroke(255, 255, 255);
+		    strokeWeight(5);
+		    translate(-91, -49);
+		    scale(0.4);
+		    fill(255, 119, 0);
+		    beginShape();
+		    vertex(-151, 32);
+		    vertex(-151, -72);
+		    vertex(-77, -73);
+		    vertex(-83, -49);
+		    bezierVertex(-83, -49, -124, -49, -124, -50);
+		    bezierVertex(-123, -47, -124, -31, -123, -29);
+		    bezierVertex(-123, -31, -93, -30, -93, -30);
+		    vertex(-100, -8);
+		    bezierVertex(-100, -8, -123, -7, -123, -8);
+		    bezierVertex(-124, -6, -123, 33, -122, 31);
+		    bezierVertex(-126, 33, -151, 32, -151, 32);
+		    endShape();
+
+		    beginShape();
+		    vertex(-82, 34);
+		    vertex(-61, -36);
+		    vertex(-26, -40);
+		    vertex(-15, 37);
+		    bezierVertex(-15, 37, -36, 37, -37, 35);
+		    bezierVertex(-37, 37, -41, 9, -41, 9);
+		    bezierVertex(-41, 9, -58, 12, -59, 10);
+		    bezierVertex(-58, 9, -66, 34, -66, 34);
+		    vertex(-83, 34);
+		    endShape();
+
+		    beginShape();
+		    vertex(21, -39);
+		    bezierVertex(68, -48, 72, -12, 50, 4);
+		    bezierVertex(50, 4, 67, 27, 67, 29);
+		    bezierVertex(67, 30, 53, 42, 53, 42);
+		    vertex(39, 18);
+		    vertex(37, 41);
+		    vertex(16, 40);
+		    vertex(21, -39);
+		    endShape();
+
+		    fill(255, 255, 255);
+		    beginShape();
+		    vertex(-54, -2);
+		    vertex(-48, -18);
+		    vertex(-45, -1);
+		    vertex(-54, -1);
+		    endShape();
+
+		    beginShape();
+		    vertex(33, 1);
+		    vertex(33, -16);
+		    bezierVertex(57, -20, 50, -7, 34, 0);
+		    endShape();
+
+			fill(255, 119, 0);
+		    beginShape();
+		    vertex(85, 43);
+		    vertex(100, -34);
+		    vertex(124, -35);
+		    vertex(132, -12);
+		    vertex(139, -35);
+		    vertex(168, -36);
+		    vertex(179, 45);
+		    vertex(155, 43);
+		    vertex(148, 20);
+		    vertex(139, 39);
+		    vertex(120, 38);
+		    vertex(112, 16);
+		    vertex(107, 44);
+		    vertex(84, 44);
+		    endShape();
+		    popMatrix();
+
+		    pushMatrix();
+		    translate(46, -40);
+		    scale(0.4);
+		    stroke(255, 255, 255);
+		    strokeWeight(5);
+		    fill(0, 51, 255);
+		    beginShape();
+		    vertex(-164, -86);
+		    bezierVertex(-157, -57, -148, -18, -146, 11);
+		    vertex(-102, 13);
+		    vertex(-78, -78);
+		    vertex(-111, -83);
+		    vertex(-122, -32);
+		    vertex(-128, -90);
+		    vertex(-164, -86);
+		    endShape();
+
+		    beginShape();
+		    vertex(-58, 15);
+		    vertex(-58, -42);
+		    vertex(-36, -44);
+		    vertex(-39, 14);
+		    vertex(-58, 15);
+		    endShape();
+
+		    beginShape();
+		    vertex(-47, -67);
+		    bezierVertex(-85, -40, -14, -37, -47, -65);
+		    endShape();
+
+		    beginShape();
+		    vertex(-14, -67);
+		    vertex(-22, 15);
+		    vertex(26, 17);
+		    vertex(26, -7);
+		    vertex(8, -10);
+		    vertex(14, -67);
+		    vertex(-13, -66);
+		    endShape();
+
+		    beginShape();
+		    vertex(50, -65);
+		    vertex(38, 16);
+		    vertex(89, 18);
+		    vertex(89, -10);
+		    vertex(70, -13);
+		    vertex(81, -62);
+		    vertex(50, -65);
+		    endShape();
+
+		    beginShape();
+		    vertex(109, -62);
+		    vertex(102, 19);
+		    vertex(150, 19);
+		    vertex(143, -8);
+		    vertex(125, -9);
+		    vertex(125, -20);
+		    vertex(137, -20);
+		    vertex(136, -32);
+		    vertex(123, -32);
+		    vertex(122, -45);
+		    vertex(145, -46);
+		    vertex(153, -65);
+		    vertex(109, -62);
+		    endShape();
+		    popMatrix();
+		    
+		    translate(0,-10);
+		    fill(255);
+		    textSize(20);
+		    textFont(createFont("Century"));
+		    textAlign(CENTER,CENTER);
+		    text("Version "+version,x/10,y/50);
+		    translate(0,10);
+		    
+			carrotl(-150, 24, 5, 0);
+
+		    blueberryl(-30, 75, 5, 0);
+
+		    tomatol(-30, 15, 5, 0);
+
+		    popMatrix();
+		};
+		var orange = function(x, y, s, r) {
+    pushMatrix();
+    translate(-117, -137);
+    translate(x, y);
+    scale(s/10);
+    rotate(r);
+    
+    pushMatrix();
+    scale(0.65);
+    stroke(201, 137, 0);
+    fill(255, 162, 0);
+    beginShape();
+    vertex(170, 167);
+    bezierVertex(85, 181, 136, 266, 175, 258);
+    bezierVertex(230, 263, 252, 166, 171, 167);
+    endShape();
+    popMatrix();
+    
+    fill(255, 226, 173, 10);
+    noStroke();
+    for (var i = 34; i > 0; i--) {
+        ellipse(102, 135, i, i+10);   
+    }
+    
+    pushMatrix();
+    translate(36, 12);
+    scale(0.5);
+    fill(0, 171, 17);
+    stroke(0, 128, 6);
+    beginShape();
+    vertex(148, 187);
+    bezierVertex(104, 191, 105, 190, 146, 202);
+    bezierVertex(148, 233, 150, 233, 165, 205);
+    bezierVertex(195, 205, 193, 205, 162, 190);
+    endShape();
+    rect(148, 183, 10, 20);
+    popMatrix();
+    
+    popMatrix();
+};
+		//friuts on trees
+		var greenapple = function(x, y, s, r) {
+		    pushMatrix();
+		    translate(-43, -56);
+		    translate(x, y);
+		    scale(s/10);
+		    rotate(r);
+
+		    fill(10, 156, 0);
+		    stroke(0, 84, 13);
+
+		    pushMatrix();
+		    scale(0.26);
+		    beginShape();
+		    vertex(160, 124);
+		    bezierVertex(1, 60, 72, 374, 182, 305);
+		    bezierVertex(284, 363, 328, 57, 160, 125);
+		    endShape();
+		    popMatrix();
+
+		    fill(64, 255, 89, 10);
+		    noStroke();
+		    for (var i = 30; i > 0; i--) {
+			   ellipse(52, 43, i, i+10);   
+		    }
+
+		    pushMatrix();
+		    stroke(156, 88, 0);
+		    arc(55, 28, 50/2, 50/2, 177, 244);
+		    popMatrix();
+
+		    popMatrix();
+		};
+		var redapple = function(x, y, s, r) {
+		    pushMatrix();
+		    translate(-43, -56);
+		    translate(x, y);
+		    scale(s/10);
+		    rotate(r);
+
+		    fill(255, 0, 0);
+		    stroke(166, 0, 0);
+
+		    pushMatrix();
+		    scale(0.26);
+		    beginShape();
+		    vertex(160, 124);
+		    bezierVertex(1, 60, 72, 374, 182, 305);
+		    bezierVertex(284, 363, 328, 57, 160, 125);
+		    endShape();
+		    popMatrix();
+
+		    fill(255, 173, 173, 10);
+		    noStroke();
+		    for (var i = 30; i > 0; i--) {
+			   ellipse(52, 43, i, i+10);   
+		    }
+
+		    pushMatrix();
+		    stroke(156, 88, 0);
+		    arc(55, 28, 50/2, 50/2, 177, 244);
+		    popMatrix();
+
+		    popMatrix();
+		};
+		var pinecone = function(x, y, s, r) {
+		    pushMatrix();
+		    translate(x, y);
+		    translate(0, -23);
+		    scale(s/10);
+		    scale(0.2);
+		    fill(135, 63, 0);
+		    stroke(0, 0, 0);
+		    strokeWeight(1);
+		    ellipse(0, 50, 30, 30);
+		    ellipse(-11, 53, 30, 30);
+		    ellipse(0, 59, 30, 30);
+		    ellipse(19, 55, 30, 30);
+		    ellipse(10, 63, 30, 30);
+		    ellipse(-10, 65, 30, 30);
+		    ellipse(-22, 60, 30, 30);
+		    ellipse(25, 79, 30, 30);
+		    ellipse(4, 78, 30, 30);
+		    ellipse(-22, 83, 30, 30);
+		    ellipse(-35, 73, 30, 30);
+		    ellipse(0, 91, 30, 30);
+		    ellipse(34, 94, 30, 30);
+		    ellipse(18, 103, 30, 30);
+		    ellipse(-11, 103, 30, 30);
+		    ellipse(-32, 99, 30, 30);
+		    ellipse(4, 122, 30, 30);
+		    ellipse(-21, 120, 30, 30);
+		    ellipse(27, 122, 30, 30);
+		    ellipse(-9, 134, 30, 30);
+		    ellipse(14, 142, 30, 30);
+		    ellipse(0, 154, 30, 30);
+
+		    popMatrix();
+		};
+		var redappletree_fruit = function(x, y, s, r){
+		    noStroke();
+		    translate(x, y);
+		    rotate(r);
+		    scale(s/10);
+		    fill(158, 90, 0);
+		    quad(-18, 54, -15, -38, +15, -38, 18, +54);
+		    quad(-30, -19, 8, -6, +15, 10, -30, +-6);
+		    fill(110, 55, 0);
+		    ellipse(-8, 38, 4, 15);
+		    ellipse(8, 33, 3, 14);
+		    ellipse(-4, -4, 4, 15);
+		    fill(0, 128, 9);
+		    ellipse(21, -56, 70, 70);
+		    fill(46, 171, 0);
+		    ellipse(-21, -98, 70, 70);
+		    fill(64, 148, 31);
+		    ellipse(30, -85, 70, 70);
+		    fill(79, 143, 0);
+		    ellipse(-26, -58, 70, 70);
+		    fill(66, 166, 0);
+		    ellipse(4, -108, 70, 70);
+		    redapple(0, 0, 3, 3);
+		    redapple(44, 10, 3, 3);
+		    redapple(-15, -40, 3, -3);
+		    redapple(28, -64, 3, 3);
+		    redapple(22, -29, 3, 3);
+		    redapple(67, -43, 3, -3);
+		    resetMatrix();
+		};
+		//trees with fruit
+		var greenappletree_fruit = function(x, y, s, r){
+		    noStroke();
+		    translate(x, y);
+		    rotate(r);
+		    scale(s/10);
+		    fill(158, 90, 0);
+		    quad(-18, 54, -15, -38, +15, -38, 18, +54);
+		    quad(-30, -19, 8, -6, +15, 10, -30, +-6);
+		    fill(110, 55, 0);
+		    ellipse(-8, 38, 4, 15);
+		    ellipse(8, -12, 3, 14);
+		    ellipse(3, 13, 4, 15);
+		    fill(0, 128, 9);
+		    ellipse(21, -56, 70, 70);
+		    fill(72, 171, 32);
+		    ellipse(-30, -98, 70, 70);
+		    fill(79, 209, 27);
+		    ellipse(30, -85, 70, 70);
+		    fill(76, 122, 15);
+		    ellipse(-26, -58, 70, 70);
+		    fill(66, 166, 0);
+		    ellipse(4, -108, 70, 70);
+		    greenapple(4, 0, 3, 3);
+		    greenapple(49, 10, 3, 3);
+		    greenapple(-15, -34, 3, -3);
+		    greenapple(28, -69, 3, 3);
+		    greenapple(42, -29, 3, 3);
+		    greenapple(67, -43, 3, -3);
+		    resetMatrix();
+		};
+		var orangetree_fruit = function(x, y, s, r){
+		    noStroke();
+		    translate(x, y);
+		    rotate(r);
+		    scale(s/10);
+		    fill(158, 90, 0);
+		    quad(-25, 54, -19, -38, 19, -55, 23, 54);
+		    pushMatrix();
+		    translate(23, 4);
+		    quad(30, -9, -8, 6, -15, -10, 30, -19);
+		    popMatrix();
+		    fill(110, 55, 0);
+		    ellipse(-8, 38, 4, 15);
+		    ellipse(8, -12, 3, 14);
+		    ellipse(3, 13, 4, 15);
+		    fill(0, 128, 9);
+		    ellipse(21, -53, 70, 70);
+		    fill(72, 171, 32);
+		    ellipse(-47, -98, 70, 70);
+		    fill(79, 209, 27);
+		    ellipse(41, -85, 70, 70);
+		    fill(76, 122, 15);
+		    ellipse(-34, -55, 70, 70);
+		    fill(66, 166, 0);
+		    ellipse(4, -103, 70, 70);
+		    fill(78, 153, 28);
+		    ellipse(31, -116, 70, 70);
+		    fill(55, 128, 7);
+		    ellipse(-25, -127, 70, 70);
+		    orange(91, 32, 3, 3);
+		    orange(50, 10, 3, 3);
+		    orange(117, -40, 3, -3);
+		    orange(60, 46, 3, 3);
+		    orange(118, 5, 3, 3);
+		    orange(67, -35, 3, -3);
+		    resetMatrix();
+		};
+		var pinetree_cones = function(x, y, s, r) {
+		    pushMatrix();
+		    translate(-139, -184);
+		    translate(x, y);
+		    scale(s/10);
+		    scale(0.7);
+		    rotate(r);
+		for (var i = 168; i < 218; i+=0.5) {
+		    stroke(138, i-100, 0);
+		    line(i, 325, i, 417);
+		}
+		stroke(21, 82, 0);
+		    fill(0, 163, 5);
+		beginShape();
+		vertex(300, 373);
+		bezierVertex(207, 391, 118, 382, 76, 366);
+		bezierVertex(115, 350, 117, 326, 141, 302);
+		bezierVertex(123, 298, 113, 303, 92, 305);
+		bezierVertex(140, 264, 150, 250, 162, 208);
+		bezierVertex(151, 216, 145, 221, 121, 225);
+		bezierVertex(166, 193, 183, 171, 197, 137);
+		bezierVertex(213, 173, 222, 195, 266, 228);
+		bezierVertex(238, 221, 252, 223, 220, 210);
+		bezierVertex(240, 246, 232, 241, 290, 305);
+		bezierVertex(267, 304, 256, 302, 244, 307);
+		bezierVertex(261, 335, 263, 351, 300, 373);
+		endShape();
+		fill(15, 99, 0);
+		beginShape();
+		vertex(187, 372);
+		bezierVertex(140, 378, 118, 382, 76, 366);
+		bezierVertex(115, 350, 117, 326, 141, 302);
+		bezierVertex(123, 298, 113, 303, 92, 305);
+		bezierVertex(140, 264, 150, 250, 162, 208);
+		bezierVertex(151, 216, 145, 221, 121, 225);
+		bezierVertex(166, 193, 183, 171, 197, 137);
+		bezierVertex(213, 173, 207, 171, 170, 203);
+		bezierVertex(181, 218, 245, 215, 166, 238);
+		bezierVertex(240, 246, 232, 241, 136, 288);
+		bezierVertex(267, 304, 193, 288, 153, 348);
+		bezierVertex(261, 340, 176, 357, 187, 370);
+		endShape();
+		pinecone(170, 221, 10, 0);
+		pinecone(206, 247, 10, 0);
+		pinecone(130, 297, 10, 0);
+		pinecone(238, 310, 10, 0);
+		pinecone(181, 330, 10, 0);
+		pinecone(244, 362, 10, 0);
+
+
+		popMatrix();
+		};
+		var redappletree = function(x, y, s, r){
+		    noStroke();
+		    translate(x, y);
+		    rotate(r);
+		    scale(s/10);
+		    fill(158, 90, 0);
+		    quad(-18, 54, -15, -38, +15, -38, 18, +54);
+		    quad(-30, -19, 8, -6, +15, 10, -30, +-6);
+		    fill(110, 55, 0);
+		    ellipse(-8, 38, 4, 15);
+		    ellipse(8, 33, 3, 14);
+		    ellipse(-4, -4, 4, 15);
+		    fill(0, 128, 9);
+		    ellipse(21, -56, 70, 70);
+		    fill(46, 171, 0);
+		    ellipse(-21, -98, 70, 70);
+		    fill(64, 148, 31);
+		    ellipse(30, -85, 70, 70);
+		    fill(79, 143, 0);
+		    ellipse(-26, -58, 70, 70);
+		    fill(66, 166, 0);
+		    ellipse(4, -108, 70, 70);
+		    resetMatrix();
+		};//trees without fruit
+		var greenappletree = function(x, y, s, r){
+		    noStroke();
+		    translate(x, y);
+		    rotate(r);
+		    scale(s/10);
+		    fill(158, 90, 0);
+		    quad(-18, 54, -15, -38, +15, -38, 18, +54);
+		    quad(-30, -19, 8, -6, +15, 10, -30, +-6);
+		    fill(110, 55, 0);
+		    ellipse(-8, 38, 4, 15);
+		    ellipse(8, -12, 3, 14);
+		    ellipse(3, 13, 4, 15);
+		    fill(0, 128, 9);
+		    ellipse(21, -56, 70, 70);
+		    fill(72, 171, 32);
+		    ellipse(-30, -98, 70, 70);
+		    fill(79, 209, 27);
+		    ellipse(30, -85, 70, 70);
+		    fill(76, 122, 15);
+		    ellipse(-26, -58, 70, 70);
+		    fill(66, 166, 0);
+		    ellipse(4, -108, 70, 70);
+		    resetMatrix();
+		};
+		var orangetree = function(x, y, s, r){
+		    noStroke();
+		    translate(x, y);
+		    rotate(r);
+		    scale(s/10);
+		    fill(158, 90, 0);
+		    quad(-25, 54, -19, -38, 19, -55, 23, 54);
+		    pushMatrix();
+		    translate(23, 4);
+		    quad(30, -9, -8, 6, -15, -10, 30, -19);
+		    popMatrix();
+		    fill(110, 55, 0);
+		    ellipse(-8, 38, 4, 15);
+		    ellipse(8, -12, 3, 14);
+		    ellipse(3, 13, 4, 15);
+		    fill(0, 128, 9);
+		    ellipse(21, -53, 70, 70);
+		    fill(72, 171, 32);
+		    ellipse(-47, -98, 70, 70);
+		    fill(79, 209, 27);
+		    ellipse(41, -85, 70, 70);
+		    fill(76, 122, 15);
+		    ellipse(-34, -55, 70, 70);
+		    fill(66, 166, 0);
+		    ellipse(4, -103, 70, 70);
+		    fill(78, 153, 28);
+		    ellipse(31, -116, 70, 70);
+		    fill(55, 128, 7);
+		    ellipse(-25, -127, 70, 70);
+		    resetMatrix();
+		};
+		var pinetree = function(x, y, s, r) {
+		    pushMatrix();
+		    translate (-16-s*12, -93-s*20);
+		    translate(x, y);
+		    scale(s/10);
+		    scale(0.7);
+		    rotate(r);
+		for (var i = 168; i < 218; i+=0.5) {
+		    stroke(138, i-100, 0);
+		    line(i, 325, i, 417);
+		}
+		stroke(21, 82, 0);
+		    fill(0, 163, 5);
+		beginShape();
+		vertex(300, 373);
+		bezierVertex(207, 391, 118, 382, 76, 366);
+		bezierVertex(115, 350, 117, 326, 141, 302);
+		bezierVertex(123, 298, 113, 303, 92, 305);
+		bezierVertex(140, 264, 150, 250, 162, 208);
+		bezierVertex(151, 216, 145, 221, 121, 225);
+		bezierVertex(166, 193, 183, 171, 197, 137);
+		bezierVertex(213, 173, 222, 195, 266, 228);
+		bezierVertex(238, 221, 252, 223, 220, 210);
+		bezierVertex(240, 246, 232, 241, 290, 305);
+		bezierVertex(267, 304, 256, 302, 244, 307);
+		bezierVertex(261, 335, 263, 351, 300, 373);
+		endShape();
+		fill(15, 99, 0);
+		beginShape();
+		vertex(187, 372);
+		bezierVertex(140, 378, 118, 382, 76, 366);
+		bezierVertex(115, 350, 117, 326, 141, 302);
+		bezierVertex(123, 298, 113, 303, 92, 305);
+		bezierVertex(140, 264, 150, 250, 162, 208);
+		bezierVertex(151, 216, 145, 221, 121, 225);
+		bezierVertex(166, 193, 183, 171, 197, 137);
+		bezierVertex(213, 173, 207, 171, 170, 203);
+		bezierVertex(181, 218, 245, 215, 166, 238);
+		bezierVertex(240, 246, 232, 241, 136, 288);
+		bezierVertex(267, 304, 193, 288, 153, 348);
+		bezierVertex(261, 340, 176, 357, 187, 370);
+		endShape();
+		popMatrix();
+		};
+		var lopar = function(x, y, s, r) {
+			pushMatrix();
+
+			translate(-10, -59);
+			translate(x, y);
+			rotate(r);
+			scale(s / 10);
+			scale(0.2);
+			scale(1);
+
+			pushMatrix();//leaves of carrot
+																							stroke(70, 161, 0);
+			fill(82, 209, 50);
+			translate(54, -78);
+																							beginShape();
+			vertex(110, 106);
+			bezierVertex(134, 111, 151, 114, 155, 196);
+			bezierVertex(100, 194, 112, 127, 110, 106);
+			endShape();
+			popMatrix();
+
+			pushMatrix(); //leaves of carrot
+																							translate(-20, 180);
+			rotate(-20);
+																							beginShape();
+			vertex(153, 170);
+			bezierVertex(188, 157, 200, 164, 238, 202);
+			bezierVertex(178, 188, 182, 208, 160, 216);
+			endShape();
+			popMatrix();
+
+			pushMatrix(); // leaves of carrot
+																							translate(80, -29);
+			rotate(-19);
+																							beginShape();
+			vertex(110, 182);
+			bezierVertex(120, 160, 124, 134, 198, 146);
+			bezierVertex(150, 176, 173, 183, 135, 200);
+			endShape();
+			popMatrix();
+
+			fill(255, 185, 79); //orange part of carrot
+			strokeWeight(6);
+			stroke(255, 136, 0);
+																							beginShape();
+			vertex(237, 116);
+			bezierVertex(142, 73, 126, 137, 94, 286);
+			bezierVertex(80, 448, 123, 375, 175, 325);
+			bezierVertex(258, 220, 333, 157, 237, 116);
+			endShape();
+			pushMatrix();
+			popMatrix();
+																							rotate(0.35);
+																							noFill();
+			arc(245, 103, 94, -5, 203, 341);
+			arc(235, 160, 84, -5, 217, 336);
+			arc(236, 215, 66, -5, 203, 341);
+			arc(236, 257, 47, -5, 203, 341);
+			popMatrix();
+		};
+		var logo = function(x, y, s) {
+			scale(s);
+			stroke(255, 136, 0);
+			strokeWeight(2);
+			fill(0, 150, 255);
+			ellipse(x, y, 100, 100);
+			lopar(x - 5, y + 5, 10, 0.5);
+			resetMatrix();
+		};
